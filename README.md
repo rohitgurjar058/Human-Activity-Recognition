@@ -16,9 +16,9 @@ For each record in the dataset it is provided:
 - An identifier of the subject who carried out the experiment.
 
 ### Data Analysis
-- No. of data points per Activity
 
-![Description](https://github.com/rohitgurjar058/Human-Activity-Recognition/Images/datapoints_count)
+- __No. of data points per Activity - No problem of Imbalance__
+
 
 
 
