@@ -18,7 +18,7 @@ For each record in the dataset it is provided:
 ### Data Analysis
 - No. of data points per Activity
 
-![Description](https://github.com/rohitgurjar058/Human-Activity-Recognition/tree/master/Images/datapoints_count)
+![Description](https://github.com/rohitgurjar058/Human-Activity-Recognition/Images/datapoints_count)
 
 
 
