@@ -19,6 +19,8 @@ For each record in the dataset it is provided:
 
 - __No. of data points per Activity - No problem of Imbalance__
 
+![](https://github.com/rohitgurjar058/Human-Activity-Recognition/blob/master/Images/datapoints_count.png)
+
 
 
 
