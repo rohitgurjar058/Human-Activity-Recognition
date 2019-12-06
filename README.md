@@ -21,6 +21,85 @@ For each record in the dataset it is provided:
 
 ![](https://github.com/rohitgurjar058/Human-Activity-Recognition/blob/master/Images/datapoints_count.png)
 
+- __Stationary and Moving activities__
+
+![](https://github.com/rohitgurjar058/Human-Activity-Recognition/blob/master/Images/stationary_vs_moving.png)
+
+- __Magnitude of an acceleration - Well seperate static and dynamic activities__ 
+
+![](https://github.com/rohitgurjar058/Human-Activity-Recognition/blob/master/Images/mag_acceleration.png)
+
+- __T-SNE Plot: Lot of Confusion between the standing and sitting activities__
+
+  - Perplexity - 10 & No. of iterations - 1000
+![](https://github.com/rohitgurjar058/Human-Activity-Recognition/blob/master/Images/tsne_perp_10_iter_1000.png)
+
+  - Perplexity - 50 & No. of iterations - 1000
+![](https://github.com/rohitgurjar058/Human-Activity-Recognition/blob/master/Images/tsne_perp_50_iter_1000.png)
+
+### Model Evaluation
+
+- We have 561 handcoded features which is engineered by the domain experts and obtained as a frequency and amplitide variation of time series data.
+
+- Apart from that, we have raw time series collected directly from the sensors which is then fed into the deep learning Algorithms to auto engineer all the features and make the predictions. 
+
+  __Machine Learning Models__
+  
+  Hyper-tuned all the relevant machine learning models on the Handcoded 561 features for the human activity recognition problem
+
+   Algorithm | Test Accuracy
+    ------------ | -------------
+    Logistic Regression | 96.27%    
+    Linear SVC          | 96.61%       
+    rbf SVM classifier  | 96.27%      
+    DecisionTree        | 86.43%      
+    Random Forest       | 91.31%       
+    GradientBoosting DT | 91.31%  
+    
+    __Best performing model is Linear Support Vector Classifier__
+    
+    ![](https://github.com/rohitgurjar058/Human-Activity-Recognition/blob/master/Images/linear_svc_best_model.png)
+    
+   __Deep Learning Models__
+
+    In the deep learning, the most effective algorithm for the raw time-series data is __LSTM__
+    
+    > __1-Layer LSTM Layer with hidden layer = 128 with dropout = 0.5__ - 92.53
+    
+    > __1-Layer LSTM Layer with hidden layer = 324 with slight change in dropout = 0.6__ - 92.22%
+    
+    > __1-Layer LSTM Layer with hidden layer = 324 with slight change in dropout = 0.6__ - 89%
+    
+    > __2-Layer LSTM Layer with hidden layer, h1 = 128 & h2 = 64 with dropout 0.2 & 0.5 respectively__ - 92.77%
+    
+    <br/>
+    Rely on the single algorithm is always not to be the best idea and this statement will makes sense when we apply CNN and got accuracy of 92.80% which is slightly better than the LSTM approach. <br/>
+    
+    ![](https://github.com/rohitgurjar058/Human-Activity-Recognition/blob/master/Images/cnn_acc_92.80.png)
+    
+    #### Divide and Conquer(using CNN) -  Implementation of Reserach Paper
+    
+    ![](https://github.com/rohitgurjar058/Human-Activity-Recognition/blob/master/Images/divide_and_conquer.png)
+    
+   
+    Algorithm | Test Accuracy
+    ------------ | -------------
+    LSTM	| 92.77%
+    CNN	| 92.80%
+    Divide and Conquer-Based with CNN	| 94.6%
+    
+### References:
+
+  Deep Learning Models for Human Activity Recognition by machinelearningmastery.com<br/>
+  Applied AI Course<br/>
+  Divide and Conquer-Based 1D CNN Human Activity Recognition Using Test Data Sharpening paper
+   
+   
+   
+   
+
+
+
 
 
 
