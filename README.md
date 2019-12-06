@@ -81,10 +81,10 @@ For each record in the dataset it is provided:
     Divide and Conquer Approach
     ![](https://github.com/rohitgurjar058/Human-Activity-Recognition/blob/master/Images/Divide%20and%20conqure%20CNN%20Approach.png)
     
-    Confusion Matrix
+    Confusion Matrix<br/>
     ![](https://github.com/rohitgurjar058/Human-Activity-Recognition/blob/master/Images/divide_and_conquer.png)
     
-    <br/>
+    
     Algorithm | Test Accuracy
     ------------ | -------------
     LSTM	| 92.77%
